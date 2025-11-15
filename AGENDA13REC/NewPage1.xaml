@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AGENDA13REC.NewPage1"
+    Title="Cálculo de Diária">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="20">
+
+            <Label Text="Cálculo de Diária"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <!-- Picker da suíte -->
+            <Picker x:Name="SuitePicker"
+                    Title="Selecione a suíte"
+                    SelectedIndexChanged="OnValueChanged">
+                <Picker.Items>
+                    <x:String>Suíte Simples - R$150/dia</x:String>
+                    <x:String>Suíte Luxo - R$300/dia</x:String>
+                    <x:String>Suíte Premium - R$500/dia</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <!-- Check-in -->
+            <Label Text="Check-in:"/>
+            <DatePicker x:Name="CheckInDate"
+                        DateSelected="OnValueChanged"/>
+
+            <!-- Check-out -->
+            <Label Text="Check-out:"/>
+            <DatePicker x:Name="CheckOutDate"
+                        DateSelected="OnValueChanged"/>
+
+            <!-- Adultos -->
+            <Label Text="Adultos:"/>
+            <Stepper x:Name="AdultosStepper"
+                     Minimum="1" Maximum="10"
+                     Increment="1"
+                     Value="1"
+                     ValueChanged="OnValueChanged"/>
+            <Label x:Name="AdultosLabel" Text="1 adulto"/>
+
+            <!-- Crianças -->
+            <Label Text="Crianças:"/>
+            <Stepper x:Name="CriancasStepper"
+                     Minimum="0" Maximum="10"
+                     Increment="1"
+                     Value="0"
+                     ValueChanged="OnValueChanged"/>
+            <Label x:Name="CriancasLabel" Text="0 crianças"/>
+
+            <!-- Botão calcular -->
+            <Button Text="Calcular Diária"
+                    Clicked="CalcularDiaria"/>
+
+            <!-- Total -->
+            <Label x:Name="ResultadoLabel"
+                   HorizontalOptions="Center"
+                   FontSize="22"
+                   TextColor="{StaticResource SecondaryColor}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

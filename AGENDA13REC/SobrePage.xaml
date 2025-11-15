@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AGENDA13REC.SobrePage"
+    Title="Sobre">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+
+        <Label Text="Sobre o Aplicativo"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Desenvolvedora: Julia"/>
+        <Label Text="Ano de Desenvolvimento: 2025"/>
+        <Label Text="Aplicativo criado para a Agenda 13 de Desenvolvimento de Sistemas."/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

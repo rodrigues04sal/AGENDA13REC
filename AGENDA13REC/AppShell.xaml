@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AGENDA13REC.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AGENDA13REC"
+    Title="AGENDA 13">
+
+    <!-- Página inicial -->
+    <ShellContent 
+        Title="Início"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="home"/>
+
+    <!-- Tela Sobre -->
+    <ShellContent 
+        Title="Sobre"
+        ContentTemplate="{DataTemplate local:SobrePage}"
+        Route="sobre"/>
+
+    <!-- Tela de cálculo de diária -->
+    <ShellContent 
+        Title="Diária"
+        ContentTemplate="{DataTemplate local:NewPage1}"
+        Route="diaria"/>
+
+</Shell>

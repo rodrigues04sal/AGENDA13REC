@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application 
+    x:Class="AGENDA13REC.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Application.Resources>
+
+        <!-- Cor principal: Roxo -->
+        <Color x:Key="PrimaryColor">#6A0DAD</Color>
+
+        <!-- Cor secundária: Dourado -->
+        <Color x:Key="SecondaryColor">#FFD700</Color>
+
+        <!-- Amarelo vivo para destaques -->
+        <Color x:Key="AccentColor">#FFEA00</Color>
+
+        <!-- Estilo global para botões -->
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+
+        <!-- Estilo global para labels -->
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource PrimaryColor}"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+
+        <!-- Páginas brancas -->
+        <Style TargetType="ContentPage">
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+
+    </Application.Resources>
+
+</Application>
